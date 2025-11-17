@@ -6,7 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Adnan Abu Othman - Portfolio</title>
 
-  <!-- pure CSS (no Bootstrap) -->
+
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+
   <link rel="stylesheet" href="css/style.css" />
 </head>
 
@@ -18,11 +21,11 @@
 
       <nav class="main-nav" id="main-nav" aria-label="Main navigation">
         <ul class="nav-list">
-          <li><a href="#about">About</a></li>
+          <li><a href="#Objectives">Objectives</a></li>
           <li><a href="#education">Education</a></li>
-          <li><a href="#skills">Skills</a></li>
           <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#Experience">Experience</a></li>
+          <li><a href="#footer">Contact</a></li>
         </ul>
       </nav>
 
@@ -32,7 +35,7 @@
   </header>
 
   <!-- HERO -->
-  <section class="hero">
+  <section class="hero" data-aos="zoom-in">
     <div class="hero-inner container">
       <div class="hero-content">
         <p class="eyebrow">I'm</p>
@@ -48,7 +51,7 @@
   </section>
 
   <!-- ABOUT -->
-  <section id="about" class="section about">
+  <section id="Objectives" class="section about" data-aos="zoom-in">
     <div class="container">
       <h2>Career Objectives</h2>
       <p>Motivated and detail-oriented full-stack web developer with strong skills in ASP.NET Core, C#, and modern web
@@ -60,7 +63,7 @@
   </section>
 
   <!-- EDUCATION -->
-  <section id="education" class="section education">
+  <section id="education" class="section education" data-aos="zoom-in">
     <div class="container">
       <h2>Education</h2>
 
@@ -84,12 +87,12 @@
 
 
   <!-- PROJECTS -->
-  <section id="projects" class="section projects">
+  <section id="projects" class="section projects" data-aos="zoom-in">
     <div class="container">
       <h2>Projects</h2>
 
       <!--Doctorak-->
-      <div class="project-list">
+      <div class="project-list" data-aos="zoom-in">
         <div class="project">
           <h3>1) Doctorak – Your Digital Healthcare Platform</h3>
           <p>Doctorak is a modern healthcare platform designed to make medical services more accessible, efficient, and
@@ -223,10 +226,10 @@
 
 
       <!--moneyScope-->
-      <div class="project-list">
+      <div class="project-list" data-aos="zoom-in">
         <div class="project">
           <h3>2) MoneyScope – Personal finance management</h3>
-          <p>MoneyScope is a personal finance web app built with ASP.NET Core (MVC) and Entity
+          <p>MoneyScope is a personal finance web app built  with ASP.NET Core (MVC) and Entity
             Framework Core. It allows users to register, log in, manage income and expenses, and view
             transaction history. The project focuses on practicing real-world concepts like
             authentication, CRUD operations, and clean code architecture</p>
@@ -286,11 +289,11 @@
 
 
   <!--new experince-->
-  <section id="education" class="section experience">
+  <section id="Experience" class="section experience" data-aos="zoom-in">
     <div class="container">
       <h2>Experience</h2>
 
-      <div class="edu-row">
+      <div class="edu-row" data-aos="zoom-in">
         <div class="exp-item">
           <h3>IT Intern – Hikma Pharmaceuticals in <span class="date"> Jan 2025 - May 2025</span></h3>
           <p>Completed an IT internship at Hikma Pharmaceuticals, focusing on infrastructure and data center operations.
@@ -301,7 +304,7 @@
         </div>
       </div>
 
-      <div class="edu-row">
+      <div class="edu-row" data-aos="zoom-in">
         <div class="exp-item">
           <h3>IT Intern – Orange Jordan in  <span class="date"> Oct 2025 - Present</span></h3>
           <p>A three-month intensive full stack development training program provided by Orange. The training focused on
@@ -321,7 +324,7 @@
 
 
 
-  <footer class="footer">
+  <footer id="footer" class="footer" data-aos="zoom-in">
     <div class="container">
       <div class="fo-content">
 
@@ -411,6 +414,14 @@
     const imageURL = canvas.toDataURL("img/About.png");
     downloadBtn.href = imageURL;
   </script>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init(); // initialize AOS
+</script>
+
 
 </body>
 
