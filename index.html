@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Adnan Abu Othman - Portfolio</title>
+
+  <!-- pure CSS (no Bootstrap) -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+  <header class="site-header">
+    <div class="wrap">
+      <div class="brand">Adnan Abu Othman</div>
+
+      <nav class="main-nav" id="main-nav" aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="#about">About</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <button class="nav-toggle" aria-controls="main-nav" aria-expanded="false"
+        aria-label="Toggle navigation">☰</button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-inner container">
+      <div class="hero-content">
+        <p class="eyebrow">I'm</p>
+        <h1 class="hero-title">Adnan Abu Othman</h1>
+        <p class="subtitle">Full Stack Developer</p>
+      </div>
+
+      <div class="hero-image" aria-hidden="true">
+        <!-- portrait (keeps proportions and floats right like the screenshot) -->
+        <img src="img/Adnan.png" alt="Adnan Abu Othman" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section about">
+    <div class="container">
+      <h2>Career Objectives</h2>
+      <p>Motivated and detail-oriented full-stack web developer with strong skills in ASP.NET Core, C#, and modern web
+        technologies. Seeking an opportunity to contribute to real-world projects, expand my expertise in both frontend
+        and backend development, and grow within a collaborative team environment. Passionate about building clean,
+        efficient, and user-centered applications, and eager to apply my academic background, internship experience, and
+        hands-on projects to deliver meaningful solutions</p>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="education" class="section education">
+    <div class="container">
+      <h2>Education</h2>
+
+      <div class="edu-row">
+        <div class="edu-text">
+          <h3>Bachelor Degree of Computer Information Systems — Al al-Bayt University, Mafraq</h3>
+          <p class="date">Oct 2021 - Jun 2025</p>
+          <p>During my 3.5 years of study I gained a solid foundation in both theoretical and practical aspects of IT,
+            including software development, database design, networking, and web technologies. I worked on several
+            projects that improved my problem-solving, teamwork and technical skills.</p>
+        </div>
+
+        <div class="edu-image">
+          <img src="img/aabu.png" alt="University building" />
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section projects">
+    <div class="container">
+      <h2>Projects</h2>
+
+      <!--Doctorak-->
+      <div class="project-list">
+        <div class="project">
+          <h3>1) Doctorak – Your Digital Healthcare Platform</h3>
+          <p>Doctorak is a modern healthcare platform designed to make medical services more accessible, efficient, and
+            user-friendly for both patients and professionals.</p>
+
+          <details>
+            <summary>The Goal</summary>
+            <p>The goal is to bridge the gap between patients and healthcare providers, improve communication, and offer
+              reliable medical services from the comfort of your home.
+
+            </p>
+          </details>
+
+          <details>
+            <summary>Key Features</summary>
+            <p>
+            <pre>
+📅 Book medical appointments easily and securely
+💬 Request consultations with licensed doctors
+💊 Order medicines directly from a digital pharmacy
+📚 Access trusted health articles and advice
+🤖 Chat with an AI assistant for quick medical guidance
+👨‍⚕️ Doctors can manage their schedules and consultations
+🧑‍⚕️ Pharmacists can sell and manage medicine orders
+🛠️ Admins have full control over user management and system operations
+              </pre>
+
+            </p>
+          </details>
+
+          <details>
+            <summary>Data Flow Diagram</summary>
+            <p>
+              <img class="Data-flow-diagram" src="img/dfd.jpg" alt="">
+            </p>
+          </details>
+
+          <details>
+            <summary>Gallery</summary>
+            <div class="row">
+              <div class="column">
+                <img src="img/homepage.png" style="width:100%" onclick="openModal();currentSlide(1)"
+                  class="hover-shadow cursor">
+              </div>
+              <div class="column">
+                <img src="img/services.png" style="width:100%" onclick="openModal();currentSlide(2)"
+                  class="hover-shadow cursor">
+              </div>
+              <div class="column">
+                <img src="img/appo.png" style="width:100%" onclick="openModal();currentSlide(3)"
+                  class="hover-shadow cursor">
+              </div>
+              <div class="column">
+                <img src="img/pharmacy.png" style="width:100%" onclick="openModal();currentSlide(4)"
+                  class="hover-shadow cursor">
+              </div>
+            </div>
+
+
+            <div id="myModal" class="modal">
+              <span class="close cursor" onclick="closeModal()">&times;</span>
+              <div class="modal-content">
+
+                <div class="mySlides">
+                  <div class="numbertext">1 / 4</div>
+                  <img src="img/homepage.png" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                  <div class="numbertext">2 / 4</div>
+                  <img src="img/services.png" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                  <div class="numbertext">3 / 4</div>
+                  <img src="img/appo.png" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                  <div class="numbertext">4 / 4</div>
+                  <img src="img/pharmacy.png" style="width:100%">
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                <div class="caption-container">
+                  <p id="caption"></p>
+                </div>
+
+
+                <div class="column">
+                  <img class="demo cursor" src="img/homepage.png" style="width:100%" onclick="currentSlide(1)"
+                    alt="Nature and sunrise">
+                </div>
+                <div class="column">
+                  <img class="demo cursor" src="img/services.png" style="width:100%" onclick="currentSlide(2)"
+                    alt="Snow">
+                </div>
+                <div class="column">
+                  <img class="demo cursor" src="img/appo.png" style="width:100%" onclick="currentSlide(3)"
+                    alt="Mountains and fjords">
+                </div>
+                <div class="column">
+                  <img class="demo cursor" src="img/pharmacy.png" style="width:100%" onclick="currentSlide(4)"
+                    alt="Northern Lights">
+                </div>
+              </div>
+            </div>
+
+          </details>
+
+
+
+        </div>
+
+
+
+        <div class="edu-image project-pic">
+          <img src="img/DOCTORAK.png" alt="University building" />
+        </div>
+
+
+
+
+      </div>
+
+
+
+
+
+
+      <!--moneyScope-->
+      <div class="project-list">
+        <div class="project">
+          <h3>2) MoneyScope – Personal finance management</h3>
+          <p>MoneyScope is a personal finance web app built with ASP.NET Core (MVC) and Entity
+            Framework Core. It allows users to register, log in, manage income and expenses, and view
+            transaction history. The project focuses on practicing real-world concepts like
+            authentication, CRUD operations, and clean code architecture</p>
+
+          <details>
+            <summary>The Goal</summary>
+            <p>Its primary goal is to help users track, organize, and understand their finances through a clean and
+              intuitive interface
+
+            </p>
+          </details>
+
+          <details>
+            <summary>Key Features</summary>
+            <p>
+            <pre>
+1. User Authentication
+2. Transaction Management
+3. Categories
+4. Transaction History
+5. Dashboard & Insights
+7. Clean Architecture
+8. Security Best Practices
+9. Modern UI
+              </pre>
+
+            </p>
+          </details>
+
+
+
+
+
+
+
+        </div>
+
+
+
+        <div class="edu-image project-pic">
+          <img src="img/LogoBgWhite.png" alt="University building" />
+        </div>
+
+
+
+
+      </div>
+
+
+
+
+    </div>
+  </section>
+
+
+
+
+
+  <!--new experince-->
+  <section id="education" class="section experience">
+    <div class="container">
+      <h2>Experience</h2>
+
+      <div class="edu-row">
+        <div class="exp-item">
+          <h3>IT Intern – Hikma Pharmaceuticals in <span class="date"> Jan 2025 - May 2025</span></h3>
+          <p>Completed an IT internship at Hikma Pharmaceuticals, focusing on infrastructure and data center operations.
+            Gained hands-on experience with servers, cloud systems, and enterprise tools.</p>
+          <div class="edu-image">
+            <img src="img/hikma.png" alt="Al Al-Bayt University / Hikma logo" />
+          </div>
+        </div>
+      </div>
+
+      <div class="edu-row">
+        <div class="exp-item">
+          <h3>IT Intern – Orange Jordan in  <span class="date"> Oct 2025 - Present</span></h3>
+          <p>A three-month intensive full stack development training program provided by Orange. The training focused on
+            building modern web applications using both frontend and backend technologies. It included hands-on
+            projects, coding exercises, and real-world scenarios. Participants learned how to design user interfaces,
+            develop server-side logic, work with databases, and deploy complete web solutions. The program strengthened
+            problem-solving skills, teamwork, version control, and best practices in web development.</p>
+          <div class="edu-image">
+            <img class="ora" src="img/Orange_logo.jpg" alt="Al Al-Bayt University / Hikma logo" />
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </section>
+
+
+
+  <footer class="footer">
+    <div class="container">
+      <div class="fo-content">
+
+
+
+        <div class="footer-column">
+          <h3>Contact</h3>
+          <p>Email: <a style="display: inline;" href="mailto:abubelal.adnan17@gmail.com">Abubelal.adnan17@gmail.com</a></p>
+          <p>Phone: +962 780 632 320</p>
+        </div>
+
+        <div class="footer-column">
+          <h3>Useful Links</h3>
+          <a target="_blank" href="https://www.linkedin.com/in/adnan-abuothman-a44342247/">LinkedIn</a>
+          <a target="_blank" href="https://github.com/ProAdnan">GitHub</a>
+          <a target="_blank" href="https://x.com/Pro3dnan">Twitter</a>
+
+
+          <a href="Adnan.pdf" download class="download-btn">My Cv</a>
+
+
+
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+
+
+
+  <script>
+    const toggle = document.querySelector(".nav-toggle");
+    const nav = document.querySelector("#main-nav");
+
+    toggle.addEventListener("click", () => {
+      nav.classList.toggle("active");
+    });
+  </script>
+
+
+
+
+  <script>
+    function openModal() {
+      document.getElementById("myModal").style.display = "block";
+    }
+
+    function closeModal() {
+      document.getElementById("myModal").style.display = "none";
+    }
+
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("demo");
+      var captionText = document.getElementById("caption");
+      if (n > slides.length) { slideIndex = 1 }
+      if (n < 1) { slideIndex = slides.length }
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+      captionText.innerHTML = dots[slideIndex - 1].alt;
+    } 
+  </script>
+
+  <script>
+    const downloadBtn = document.getElementById('downloadButton');
+    const imageURL = canvas.toDataURL("img/About.png");
+    downloadBtn.href = imageURL;
+  </script>
+
+</body>
+
+</html>
