@@ -5,9 +5,14 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Adnan Abu Othman - Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto:wght@300&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
 
-
-<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 
 
   <link rel="stylesheet" href="css/style.css" />
@@ -17,7 +22,12 @@
 
   <header class="site-header">
     <div class="wrap">
-      <div class="brand"><a style="text-decoration: none; color: var(--text);" href="index.html">Adnan Abu Othman</a></div>
+      <div class="brand"><a style="text-decoration: none; color:rgb(255, 255, 255);" href="index.html">Adnan Abu
+          Othman</a>
+      </div>
+
+      <div class="brand2"><a style="text-decoration: none;" href="index.html">Adnan</a>
+      </div>
 
       <nav class="main-nav" id="main-nav" aria-label="Main navigation">
         <ul class="nav-list">
@@ -36,7 +46,7 @@
 
   <!-- HERO -->
   <section class="hero" data-aos="zoom-in">
-    <div class="hero-inner container">
+    <div class="hero-inner">
       <div class="hero-content">
         <p class="eyebrow">I'm</p>
         <h1 class="hero-title">Adnan Abu Othman</h1>
@@ -67,7 +77,39 @@
     <div class="container">
       <h2>Education</h2>
 
-      <div class="edu-row">
+
+
+      <div class="edu-card">
+
+
+
+        <div class="card1">
+          <img
+            src="https://ammannet.net/sites/default/files/styles/news_landing/public/2023-08/250900_1_0.jpg?h=827069f2&itok=rK8wOubv"
+            alt="">
+          <div class="card-content">
+            <h2>
+              Al al-Bayt University, Mafraq
+            </h2>
+            <p>
+              Bachelor Degree of Computer Information Systems,
+              During my 3.5 years of study I gained a solid foundation in both theoretical and practical aspects of IT,
+              including software development, database design, networking, and web technologies. I worked on several
+              projects that improved my problem-solving, teamwork and technical skills.
+            </p>
+            <a href="#" class="button">
+              Find out more
+              <span class="material-symbols-outlined">
+                arrow_right_alt
+              </span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+
+      <!-- <div class="edu-row">
         <div class="edu-text">
           <h3>Bachelor Degree of Computer Information Systems — Al al-Bayt University, Mafraq</h3>
           <p class="date">Oct 2021 - Jun 2025</p>
@@ -79,7 +121,7 @@
         <div class="edu-image">
           <img src="img/aabu.png" alt="University building" />
         </div>
-      </div>
+      </div> -->
 
     </div>
   </section>
@@ -91,7 +133,65 @@
     <div class="container">
       <h2>Projects</h2>
 
-      <!--Doctorak-->
+
+
+
+      <div class="project-cards">
+
+        <div class="card2">
+          <img src="https://sooriyahospital.com/wp-content/uploads/2025/04/doctor-logo-49399.png" alt="">
+          <div class="card-content">
+            <h2>
+              Doctorak
+            </h2>
+            <p>
+              Doctorak – Your Digital Healthcare Platform,
+              The goal is to bridge the gap between patients and healthcare providers, improve communication, and offer
+              reliable medical services from the comfort of your home.
+            </p>
+            <a href="#" class="button">
+              Find out more
+              <span class="material-symbols-outlined">
+                arrow_right_alt
+              </span>
+            </a>
+          </div>
+        </div>
+
+        <!--card 2-->
+        <div class="card2">
+          <img src="https://img.freepik.com/premium-vector/cash-money-logo-design-concept_761413-7125.jpg
+" alt="">
+          <div class="card-content">
+            <h2>
+              MoneyScope
+            </h2>
+            <p>
+              MoneyScope is a personal finance web app built with ASP.NET Core (MVC) and Entity
+              Framework Core. It allows users to register, log in, manage income and expenses, and view
+              transaction history. The project focuses on practicing real-world concepts like
+              authentication, CRUD operations, and clean code architecture
+            </p>
+            <a href="#" class="button">
+              Find out more
+              <span class="material-symbols-outlined">
+                arrow_right_alt
+              </span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+
+
+
+
+
+
+
+
+      <!-- Doctorak
       <div class="project-list" data-aos="zoom-in">
         <div class="project">
           <h3>1) Doctorak – Your Digital Healthcare Platform</h3>
@@ -152,56 +252,7 @@
             </div>
 
 
-            <div id="myModal" class="modal">
-              <span class="close cursor" onclick="closeModal()">&times;</span>
-              <div class="modal-content">
 
-                <div class="mySlides">
-                  <div class="numbertext">1 / 4</div>
-                  <img src="img/homepage.png" style="width:100%">
-                </div>
-
-                <div class="mySlides">
-                  <div class="numbertext">2 / 4</div>
-                  <img src="img/services.png" style="width:100%">
-                </div>
-
-                <div class="mySlides">
-                  <div class="numbertext">3 / 4</div>
-                  <img src="img/appo.png" style="width:100%">
-                </div>
-
-                <div class="mySlides">
-                  <div class="numbertext">4 / 4</div>
-                  <img src="img/pharmacy.png" style="width:100%">
-                </div>
-
-                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-                <div class="caption-container">
-                  <p id="caption"></p>
-                </div>
-
-
-                <div class="column">
-                  <img class="demo cursor" src="img/homepage.png" style="width:100%" onclick="currentSlide(1)"
-                    alt="Nature and sunrise">
-                </div>
-                <div class="column">
-                  <img class="demo cursor" src="img/services.png" style="width:100%" onclick="currentSlide(2)"
-                    alt="Snow">
-                </div>
-                <div class="column">
-                  <img class="demo cursor" src="img/appo.png" style="width:100%" onclick="currentSlide(3)"
-                    alt="Mountains and fjords">
-                </div>
-                <div class="column">
-                  <img class="demo cursor" src="img/pharmacy.png" style="width:100%" onclick="currentSlide(4)"
-                    alt="Northern Lights">
-                </div>
-              </div>
-            </div>
 
           </details>
 
@@ -220,16 +271,63 @@
 
       </div>
 
+      <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+
+          <div class="mySlides">
+            <div class="numbertext">1 / 4</div>
+            <img src="img/homepage.png" style="width:100%">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">2 / 4</div>
+            <img src="img/services.png" style="width:100%">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">3 / 4</div>
+            <img src="img/appo.png" style="width:100%">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">4 / 4</div>
+            <img src="img/pharmacy.png" style="width:100%">
+          </div>
+
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+          <div class="caption-container">
+            <p id="caption"></p>
+          </div>
+
+
+          <div class="column">
+            <img class="demo cursor" src="img/homepage.png" style="width:100%" onclick="currentSlide(1)"
+              alt="Nature and sunrise">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="img/services.png" style="width:100%" onclick="currentSlide(2)" alt="Snow">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="img/appo.png" style="width:100%" onclick="currentSlide(3)"
+              alt="Mountains and fjords">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="img/pharmacy.png" style="width:100%" onclick="currentSlide(4)"
+              alt="Northern Lights">
+          </div>
+        </div>
+      </div>
 
 
 
 
-
-      <!--moneyScope-->
       <div class="project-list" data-aos="zoom-in">
         <div class="project">
           <h3>2) MoneyScope – Personal finance management</h3>
-          <p>MoneyScope is a personal finance web app built  with ASP.NET Core (MVC) and Entity
+          <p>MoneyScope is a personal finance web app built with ASP.NET Core (MVC) and Entity
             Framework Core. It allows users to register, log in, manage income and expenses, and view
             transaction history. The project focuses on practicing real-world concepts like
             authentication, CRUD operations, and clean code architecture</p>
@@ -277,7 +375,7 @@
 
 
       </div>
-
+ -->
 
 
 
@@ -293,7 +391,63 @@
     <div class="container">
       <h2>Experience</h2>
 
-      <div class="edu-row" data-aos="zoom-in">
+
+
+
+      <div class="ex-cards">
+
+
+
+        <div class="card3">
+          <img src="https://prophet.com/wp-content/uploads/2018/07/Hikma_creative_for_web1_2800x1500px-min.jpg" alt="">
+          <div class="card-content">
+            <h2>
+              Hikma
+            </h2>
+            <p>
+             Completed an IT internship at Hikma Pharmaceuticals, focusing on infrastructure and data center operations.
+            Gained hands-on experience with servers, cloud systems, and enterprise tools.
+            </p>
+            <a href="#" class="button">
+              Find out more
+              <span class="material-symbols-outlined">
+                arrow_right_alt
+              </span>
+            </a>
+          </div>
+        </div>
+
+
+
+
+        <div class="card3">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQk3wCVjWEIJRGuLuoWfGPtM9-Y8upecK_37A&s" alt="">
+          <div class="card-content">
+            <h2>
+              Orange Jordan-Coding School
+            </h2>
+            <p>
+              A three-month intensive full stack development training program provided by Orange. The training focused on
+            building modern web applications using both frontend and backend technologies. It included hands-on
+            projects, coding exercises, and real-world scenarios
+            </p>
+            <a href="#" class="button">
+              Find out more
+              <span class="material-symbols-outlined">
+                arrow_right_alt
+              </span>
+            </a>
+          </div>
+        </div>
+
+
+      </div>
+
+
+
+
+
+      <!-- <div class="edu-row" data-aos="zoom-in">
         <div class="exp-item">
           <h3>IT Intern – Hikma Pharmaceuticals in <span class="date"> Jan 2025 - May 2025</span></h3>
           <p>Completed an IT internship at Hikma Pharmaceuticals, focusing on infrastructure and data center operations.
@@ -306,7 +460,7 @@
 
       <div class="edu-row" data-aos="zoom-in">
         <div class="exp-item">
-          <h3>IT Intern – Orange Jordan in  <span class="date"> Oct 2025 - Present</span></h3>
+          <h3>IT Intern – Orange Jordan in <span class="date"> Oct 2025 - Present</span></h3>
           <p>A three-month intensive full stack development training program provided by Orange. The training focused on
             building modern web applications using both frontend and backend technologies. It included hands-on
             projects, coding exercises, and real-world scenarios. Participants learned how to design user interfaces,
@@ -316,7 +470,7 @@
             <img class="ora" src="img/Orange_logo.jpg" alt="Al Al-Bayt University / Hikma logo" />
           </div>
         </div>
-      </div>
+      </div> -->
 
 
     </div>
@@ -332,7 +486,8 @@
 
         <div class="footer-column">
           <h3>Contact</h3>
-          <p>Email: <a style="display: inline;" href="mailto:abubelal.adnan17@gmail.com">Abubelal.adnan17@gmail.com</a></p>
+          <p>Email: <a style="display: inline;" href="mailto:abubelal.adnan17@gmail.com">Abubelal.adnan17@gmail.com</a>
+          </p>
           <p>Phone: +962 780 632 320</p>
         </div>
 
@@ -345,11 +500,20 @@
 
           <a href="Adnan.pdf" download class="download-btn">My Cv</a>
 
+          <div class="last-div">
+            <div>A</div>
+            <div>B</div>
+            <div>C</div>
+
+          </div>
+
 
 
         </div>
       </div>
     </div>
+
+
   </footer>
 
 
@@ -366,6 +530,8 @@
       nav.classList.toggle("active");
     });
   </script>
+
+
 
 
 
@@ -417,11 +583,24 @@
 
 
 
-<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-<script>
-  AOS.init(); // initialize AOS
-</script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init(); // initialize AOS
+  </script>
 
+
+
+
+  <script>
+    $(window).scroll(function () {
+      if ($(document).scrollTop() > 50) {
+        $('.site-header').addClass('affix');
+        console.log("OK");
+      } else {
+        $('.site-header').removeClass('affix');
+      }
+    });
+  </script>
 
 </body>
 
